@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bfl-webhook
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python webhook_server.py"
+    env: python
+    plan: free
+    region: oregon
